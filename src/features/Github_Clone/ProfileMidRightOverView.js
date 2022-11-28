@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux'
 
 const ProfileMidRightOverView = () => {
     const state=useSelector((state)=>state)
-    console.log(state.githubSliceReducer.profileObj.repo.slice(0,6));
-    return (
+   // users public repo data in overview page
+     return (
     <div id="overViewDivOuter">
         <h3>Public Repositories</h3>
-        <div id="gridContainer">
+        <div id="gridContainer">       
           {(state.githubSliceReducer.profileObj.repo)?
           state.githubSliceReducer.profileObj.repo.slice(0,6).map((item)=>{
             return(
@@ -15,16 +15,8 @@ const ProfileMidRightOverView = () => {
                 <div className="gridBox"><p>{item.name}</p><button>Public</button></div>
                 </>
             )
-        }):<p>helo</p>
-          
+        }):<p></p>   
           }  
-            {/* <div className="gridBox"></div>
-            <div className="gridBox"></div>
-            <div className="gridBox"></div>
-            <div className="gridBox"></div>
-            <div className="gridBox"></div>
-            <div className="gridBox"></div> */}
-            
         </div>
     </div>
   )

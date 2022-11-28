@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 
 const ProfileMidLeft = () => {
   const state=useSelector(state=>state.githubSliceReducer.profileObj)
-  console.log(state)
   return (
     <div id="midLeftOuter">
       <div id="midLeftTop">
@@ -13,7 +12,7 @@ const ProfileMidLeft = () => {
       <h1>{state.login}</h1>
       <h3>{state.name}</h3>
       <button>Follow</button><br/>
-      <span>{state.followers}-Follorers</span><span>{state.following}- Following</span><br/>
+      <span>{state.followers}-Follorers</span><span>{state.following}- Following</span><br/><br/>
       <i class='fas fa-map-marker-alt' style={{fontSize:"20px",color:"red"}}></i><span>{state.location}</span><br/>
       <i class="fa fa-envelope" style={{fontSize:"20px",color:"red"}}></i><span>{state.email}</span><br/>
       <i class="fa fa-paperclip" style={{fontSize:"20px",color:"red"}}></i><span>{state.html_url}</span><br/>

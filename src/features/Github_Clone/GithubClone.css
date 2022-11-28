@@ -1,10 +1,9 @@
-*{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-#outer
-{
-  height: auto;
+#outer {
+  height: 500px;
   width: 100%;
   text-align: center;
   color: white;
@@ -12,56 +11,53 @@ padding: 0;
   padding-bottom: 80px;
   background-color: black;
 }
-#searchInput{
-    height: 40px;
-    width: 50%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    background: #c31835;
-    color: white;
-    margin-top: 60px;
+#searchInput {
+  height: 40px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background: #c31835;
+  color: white;
+  margin-top: 60px;
 }
 ::placeholder {
-    color: white;
-    font-size: 20px;
-  }
-  input:focus{
-    outline: none;
-  }
-  #userDetail{
-    height: 250px;
-    width: 60%;
-    border-radius: 10px;
-    margin: 50px auto;
-    display: flex;
-    background-color: #c31835;
-  }
-  #divLeft{
-    height: 60%;
-    width: 23%;
-    border-radius: 50%;
-    margin: auto;
-    
-  }
-  #divRight{
-    height: 80%;
-    width: 65%;
-    margin: 45px auto;
-    color: black;
-    text-align: left;
-    
+  color: white;
+  font-size: 20px;
 }
-img{
-    border-radius: 50%;
+input:focus {
+  outline: none;
 }
-#divRightBottom
-{
+#userDetail {
+  height: 250px;
+  width: 60%;
+  border-radius: 10px;
+  margin: 50px auto;
+  display: flex;
+  background-color: #c31835;
+}
+#divLeft {
+  height: 60%;
+  width: 23%;
+  border-radius: 50%;
+  margin: auto;
+}
+#divRight {
+  height: 80%;
+  width: 65%;
+  margin: 45px auto;
+  color: black;
+  text-align: left;
+}
+img {
+  border-radius: 50%;
+}
+#divRightBottom {
   height: 50%;
   width: 100%;
 }
-#viewProfile{
+#viewProfile {
   height: 28px;
   border: none;
   background: black;
@@ -71,7 +67,7 @@ img{
   margin-bottom: 4px;
   padding: 5px;
 }
-#divRightBottom>button{
+#divRightBottom > button {
   height: 28px;
   border: none;
   background: black;
@@ -82,40 +78,38 @@ img{
   padding: 5px;
 }
 
-#divRightBottom>span{
+#divRightBottom > span {
   margin-right: 65px;
   color: white;
 }
-#divRightTop{
+#divRightTop {
   height: 50%;
   width: 100%;
   color: white;
 }
-#divRightTop>p{
+#divRightTop > p {
   margin-top: 25px;
 }
-#divRightTop>h3{
-
+#divRightTop > h3 {
   padding-top: 10px;
 }
-.displayBolck{
-  display:visible;
+.displayBolck {
+  display: visible;
 }
-.displayNone{
+.displayNone {
   visibility: hidden;
   height: 0%;
   width: 0%;
 }
-#userDetail1{
+#userDetail1 {
   height: 250px;
-    width: 60%;
-    border-radius: 10px;
-    margin: 50px auto;
-    display: flex;
-    background-color: #c31835;
+  width: 60%;
+  border-radius: 10px;
+  margin: 50px auto;
+  display: flex;
+  background-color: #c31835;
 }
-#footer
-{
+#footer {
   height: 30px;
   width: 100%;
   position: fixed;
@@ -125,29 +119,25 @@ img{
   padding-top: 10px;
   background-color: #c31835;
 }
-#profileOuter{
+#profileOuter {
   color: white;
 }
-#navbarprofile{
+#navbarprofile {
   height: 60px;
   width: 100%;
   display: flex;
   background-color: rgb(2, 2, 2);
-  /* justify-content: space-around;
-  align-items: center; */
 }
-#navInp
-{
+#navInp {
   height: 18px;
-    width: 20%;
-    border: 1pxwhite;
-    background: black;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
+  width: 20%;
+  border: 1pxwhite;
+  background: black;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
 }
-#navDivLeft
-{
+#navDivLeft {
   height: 100%;
   width: 70%;
   display: flex;
@@ -155,7 +145,7 @@ img{
   align-items: center;
 }
 
-#navDivRight{
+#navDivRight {
   height: 100%;
   width: 10%;
   display: flex;
@@ -164,111 +154,178 @@ img{
   justify-content: space-around;
   align-items: center;
 }
-#mainDivBody{
+#mainDivBody {
   height: 700px;
   width: 100%;
-  /* background-color: aquamarine; */
 }
-#mainDivTop{
+#mainDivTop {
   height: 70px;
   width: 100%;
   display: flex;
   border-bottom: 1px solid #afafaf;
   background-color: aliceblue;
 }
-#leftMaindivTop{
+#leftMaindivTop {
   height: 100%;
   width: 40%;
   background-color: #ffffff;
 }
-#RightMaindivTop{
+#RightMaindivTop {
   height: 60px;
-    width: 60%;
-    display: flex;
-    padding-bottom: 10px;
-    /* border-bottom: 1px solid black; */
-    color: black;
-    background-color: #ffffff;
-    justify-content: flex-start;
-    align-items: flex-end;
+  width: 60%;
+  display: flex;
+  padding-bottom: 10px;
+  color: black;
+  background-color: #ffffff;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
-#RightMaindivTop>span{
+#RightMaindivTop > span {
   margin-right: 50px;
   margin-left: 10px;
-  /* text-decoration: underline; */
 }
-#mainMiddle{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    color: black;
-    /* background-color: #c31835; */
+#mainMiddle {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  color: black;
 }
-#midLeftOuter{
+#midLeftOuter {
   height: 100%;
   width: 40%;
   position: relative;
-  /* background-color: #afafaf; */
 }
-#midRightOuter{
+#midRightOuter {
   height: 100%;
   width: 60%;
   background-color: rgb(255, 255, 255);
 }
-#midLeftTop{
+#midLeftTop {
   height: 50%;
   width: 60%;
   margin: auto;
   position: absolute;
-  top:-40px;
-  left:20%;
+  top: -40px;
+  left: 20%;
   border-radius: 50%;
-  /* background-color: #c31835; */
 }
-#midLeftBottom{
+#midLeftBottom {
   height: 44%;
   width: 88%;
   padding: 2% 2% 2% 10%;
   font-size: 20px;
   margin-top: 50%;
-  /* background-color: #2e2527; */
 }
-#midLeftBottom>button{
+#midLeftBottom > button {
   height: 35px;
-    width: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-#midLeftBottom>span{
+#midLeftBottom > span {
   margin-left: 10px;
   margin-right: 20px;
 }
-#overViewDivOuter{
+#overViewDivOuter {
   height: 100%;
   width: 100%;
   padding-top: 20px;
-  /* background-color: #c31835; */
 }
-#gridContainer{
+#gridContainer {
   display: grid;
-    width: 96%;
-    padding: 2%;
-    /* background-color: #c31835; */
-    gap: 20px;
-    grid-template-columns: repeat( auto-fill, minmax(280px, 1fr));
+  width: 96%;
+  padding: 2%;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
-.gridBox{
+.gridBox {
   height: 68px;
   border-radius: 10px;
   display: flex;
   padding: 20px;
-  /* background-color: red; */
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   justify-content: space-between;
 }
-.gridBox>button{
+.gridBox > button {
   height: 30px;
-    width: 60px;
-    border: none;
-    border-radius: 10px;
+  width: 60px;
+  border: none;
+  border-radius: 10px;
+}
+#outerProfileRepo {
+  height: auto;
+  width: 100%;
+}
+#topRepo {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #a7a1a1;
+  justify-content: space-around;
+  align-items: center;
+}
+#topRepo > input {
+  height: 30px;
+  width: 50%;
+  border: 1px solid #a7a1a1;
+  border-radius: 10px;
+}
+#topRepo > select {
+  height: 30px;
+  width: 90px;
+  background: none;
+  border: 1px solid #a7a1a1;
+  border-radius: 10px;
+}
+#topRepo > button {
+  height: 30px;
+  width: 50px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(68, 143, 68);
+}
+#gridContainerRepo {
+  display: grid;
+  width: 96%;
+  padding: 2%;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+#gridRepo {
+  height: 68px;
+  border-bottom: 1px solid rgb(151, 151, 151);
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+#gridRepoLeft {
+  height: 100%;
+  width: 50%;
+  color: #0969da;
+  display: flex;
+}
+#gridRepoLeft > button {
+  height: 30px;
+  width: 53px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#outerProject {
+  height: 200px;
+  width: 96%;
+  border-radius: 11px;
+  display: flex;
+  margin: 2%;
+  border: 1px solid #bfb6b6;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  height: 80%;
+  width: 45px;
 }

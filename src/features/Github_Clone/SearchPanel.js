@@ -1,29 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { store } from "../../app/store";
 import Footer from "./footer";
-import { fetchData, showProfile, userDataFetch } from "./githubSlice";
+import { fetchData, showProfile} from "./githubSlice";
 const SearchPanel = () => {
   const navigate=useNavigate();
   const stateData = useSelector((state) => state);
-  console.log(stateData)
   const dispatch = useDispatch();
-  //all user data fetched
-  useEffect(() => {
-    dispatch(userDataFetch());
-  }, []);
-
-  useEffect(()=>{
-    console.log(stateData)
-  },[stateData])
-  //user searchData fetched
+  // code for search profile of github
   const searchData = (e) => {
     e.preventDefault();
     let inpData = document.getElementById("searchInput").value;
     dispatch(fetchData(inpData));
     console.log(stateData.githubSliceReducer.githubArr);
   };
+  //code for view user profile
   const viewProfile=(e)=>{
          let ind=e.target.getAttribute("ind")
          dispatch(showProfile(ind));
@@ -43,7 +35,7 @@ const SearchPanel = () => {
             autoFocus
           />
         </form>
-        {/* search data */}
+        {/* user profile searched data */}
         {stateData.githubSliceReducer.githubArr.map((item,i) => {
           return (
             <>

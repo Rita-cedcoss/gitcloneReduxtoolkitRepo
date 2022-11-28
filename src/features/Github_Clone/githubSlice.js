@@ -1,17 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
+// import { act } from "react-dom/test-utils";
 
 const initialState={
     githubArr:[],
     status:"",
-    profileObj:{}
+    profileObj:{},
+    count:0
 }
-export const userDataFetch=createAsyncThunk("githubclone/userDataFetch",
-async ()=>{
-    const response=await axios.get("https://api.github.com/users");
-    console.log(response.data);
-    return response.data
-})
+//code for data fetch when user searched
 export const fetchData=createAsyncThunk('githubclone/fetchData',
 async (inpData)=>{
     const response=await axios.get("https://api.github.com/users/"+inpData);
@@ -27,21 +24,19 @@ export const githubSlice=createSlice({
     reducers:{
       showProfile:(state,action)=>{
         state.profileObj=state.githubArr[action.payload];
-        // console.log(state.githubArr); 
+      },
+      over:(state,action)=>{
+        state.count=0;
+      },
+      repo:(state,action)=>{
+        state.count=1;
+      },
+      project:(state,action)=>{
+        state.count=2;
       }
     },
     extraReducers: (builder) => {
         builder
-          .addCase(userDataFetch.pending,(state,action)=>{
-            state.status="helo"
-          })
-          .addCase(userDataFetch.fulfilled,(state,action)=>{
-            state.status="data fetch"
-            state.githubArr=action.payload
-          })
-          .addCase(userDataFetch.rejected,(state,action)=>{
-            state.status="failed"
-          })
           .addCase(fetchData.pending,(state,action)=>{
             state.status="helo"
           })
@@ -55,5 +50,5 @@ export const githubSlice=createSlice({
           })
       }
 })
-export const {showProfile}=githubSlice.actions;
+export const {showProfile ,over,repo,project}=githubSlice.actions;
 export default githubSlice.reducer;
